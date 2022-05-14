@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .header {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            background-color: red;
+        }
+
+        .footer {
+            width: 100%;
+            height: 55px;
+            position: fixed;
+            border: 1px solid black;
+            background-color: white;
+            bottom: 0px;
+        }
+
+        .news {
+            width: 100%;
+            height: 340px;
+            margin-top: 50px;
+        }
+
+        .newsContent {
+            height: 30px;
+            width: 100%;
+            margin-top: 5px;
+            display: flex;
+
+            align-items: center;
+        }
+
+        .application {
+            width: 100%;
+            height: 320px;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            background-color: rgb(225, 225, 225);
+        }
+
+        .app {
+            flex: 0 0 33%;
+        }
+
+        .navigator {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navigator img{
+            padding-top: 8px;
+            
+        }
+        .mainImg img{
+            width: 100%;
+            height: 150px;
+        }
+        #btnLogin {
+            width: 60px;
+            height: 40px;
+            float: right;
+            margin-right: 20px;
+            margin-top: 5px;
+            background-color: antiquewhite;
+        }
+
+        #newsImg {
+            margin: 5px 30px 5px 20px;
+            height: 30px;
+        }
+
+        #topImg {
+            width: 100%;
+            height: 80%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>建党e家首页面</h1>
+    <div class="header">
+        <button id="btnLogin">登录</button>
+    </div>
+    <div class="news">
+        <img src="../img/banner.png" id="topImg">
+        <div class="newsContent">
+            <img src="../img/news.png" id="newsImg">
+            <p id="newsText">习近平：加强党对金融工作的领导...</p>
+        </div>
+    </div>
+    <div class="application">
+        <div class="app">
+            <img src="../img/icon_01.png">
+            <p>信工新闻眼</p>
+        </div>
+        <div class="app">
+            <img src="../img/icon_03.png">
+            <p>党员与组织</p>
+        </div>
+        <div class="app">
+            <img src="../img/icon_05.png">
+            <p>党员云互动</p>
+        </div>
+        <div class="app">
+            <img src="../img/icon_04.png">
+            <p>党建一点通</p>
+        </div>
+        <div class="app">
+            <img src="../img/icon_02.png">
+            <p>党员风采录</p>
+        </div>
+    </div>
+    <div class="mainImg">
+        <img src="../img/banner01.png">
+        <img src="../img/specialcolumn.png">
+    </div>
+    <div class="footer">
+        <div class="navigator">
+            <img src="../img/btm2.png">
+            <img src="../img/btm03.png">
+            <img src="../img/btm01.png">
+        </div>
+    </div>
+
 </body>
+
 </html>
